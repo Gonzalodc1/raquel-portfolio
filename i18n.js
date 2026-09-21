@@ -25,7 +25,7 @@ const EN = {
   "hero.fact1": "years of experience",
   "hero.fact2": "growth of the partner network",
   "hero.fact3": "key industries",
-  "hero.portraitAlt": "Portrait of Raquel García Jabardo",
+  "hero.portraitAlt": "Raquel García Jabardo speaking at the Madrid Bar Association",
   "hero.location": "Madrid, Spain",
 
   "about.eyebrow": "About me",
