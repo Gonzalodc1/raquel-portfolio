@@ -244,16 +244,30 @@ h1, h2, h3 {
   overflow: hidden;
   box-shadow: var(--shadow);
   border: 1px solid rgba(15, 35, 56, 0.08);
+  background: #e8eef4;
+}
+/* La foto se ve entera dentro del cuadrado; el hueco que queda a los lados
+   lo rellena una copia desenfocada de la propia imagen. */
+.portrait-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("./assets/img/raquel.png") center / cover no-repeat;
+  filter: blur(22px) saturate(0.85);
+  transform: scale(1.2);
 }
 .portrait-frame img {
+  position: relative;
+  z-index: 1;
   width: 100%; height: 100%;
-  object-fit: cover;
-  object-position: center 28%;
+  object-fit: contain;
+  object-position: center;
   filter: saturate(0.97) contrast(1.03);
 }
 .portrait-frame::after {
   content: "";
   position: absolute;
+  z-index: 2;
   inset: 0;
   background:
     linear-gradient(180deg, rgba(15, 35, 56, 0.42) 0%, transparent 24%, transparent 60%, rgba(15, 35, 56, 0.34) 100%),
