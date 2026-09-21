@@ -43,8 +43,8 @@
 
     <main id="top">
       <!-- HERO -->
-      <section class="hero section">
-        <div class="hero-copy reveal">
+      <section class="hero section" id="inicio">
+        <div class="hero-copy reveal reveal-left">
           <p class="eyebrow" data-i18n="hero.eyebrow">Firma electrónica · Identidad digital · Partners</p>
           <h1>Raquel García Jabardo</h1>
           <p class="hero-role" data-i18n="hero.role">Channel Partner Manager</p>
@@ -59,7 +59,7 @@
             <li><strong>4</strong><span data-i18n="hero.fact3">sectores clave</span></li>
           </ul>
         </div>
-        <div class="hero-portrait reveal">
+        <div class="hero-portrait reveal reveal-right">
           <div class="portrait-frame">
             <img src="./assets/img/raquel.jpg" width="1200" height="1600" data-i18n-alt="hero.portraitAlt" alt="Raquel García Jabardo durante una ponencia en el Ilustre Colegio de la Abogacía de Madrid" />
           </div>
@@ -142,12 +142,12 @@
       </section>
 
       <!-- SECTORES -->
-      <section class="section sectors-section">
+      <section class="section sectors-section" id="sectores">
         <div class="section-head reveal">
           <p class="eyebrow" data-i18n="sectors.eyebrow">Sectores</p>
           <h2 data-i18n="sectors.title">Experiencia probada en industrias reguladas.</h2>
         </div>
-        <div class="sectors-band reveal">
+        <div class="sectors-band reveal reveal-scale">
           <span data-i18n="sectors.s1">Banca</span>
           <span data-i18n="sectors.s2">Seguros</span>
           <span data-i18n="sectors.s3">Utilities</span>
@@ -162,7 +162,7 @@
           <h2 data-i18n="exp.title">Una trayectoria de crecimiento comercial.</h2>
         </div>
         <div class="timeline">
-          <article class="tl-item reveal">
+          <article class="tl-item reveal reveal-left">
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
@@ -174,7 +174,7 @@
             </div>
           </article>
 
-          <article class="tl-item reveal">
+          <article class="tl-item reveal reveal-left">
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
@@ -186,7 +186,7 @@
             </div>
           </article>
 
-          <article class="tl-item reveal">
+          <article class="tl-item reveal reveal-left">
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
@@ -198,7 +198,7 @@
             </div>
           </article>
 
-          <article class="tl-item reveal">
+          <article class="tl-item reveal reveal-left">
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
@@ -210,7 +210,7 @@
             </div>
           </article>
 
-          <article class="tl-item reveal">
+          <article class="tl-item reveal reveal-left">
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
@@ -222,7 +222,7 @@
             </div>
           </article>
 
-          <article class="tl-item reveal">
+          <article class="tl-item reveal reveal-left">
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
@@ -234,7 +234,7 @@
             </div>
           </article>
 
-          <article class="tl-item reveal">
+          <article class="tl-item reveal reveal-left">
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
@@ -257,8 +257,15 @@
             Tres iniciativas estratégicas en el ecosistema de confianza digital:
           </p>
         </div>
-        <div class="cards-grid projects-grid">
-          <article class="project-card reveal">
+        <div class="carousel reveal" data-carousel>
+          <div
+            class="carousel-track"
+            tabindex="0"
+            role="group"
+            data-i18n-aria-label="projects.trackLabel"
+            aria-label="Proyectos — desplazamiento horizontal"
+          >
+          <article class="project-card">
             <span class="project-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H17a1 1 0 0 1 1 1v1.5" />
@@ -269,7 +276,7 @@
             <h3 data-i18n="projects.c1t">Wallet Digital</h3>
             <p data-i18n="projects.c1d">Cartera digital segura con identidad verificada y firma electrónica integrada.</p>
           </article>
-          <article class="project-card reveal">
+          <article class="project-card">
             <span class="project-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21H15" />
@@ -281,7 +288,7 @@
             <h3 data-i18n="projects.c2t">Firma Electrónica</h3>
             <p data-i18n="projects.c2d">Firma avanzada en sectores regulados: banca, seguros y telecomunicaciones.</p>
           </article>
-          <article class="project-card reveal">
+          <article class="project-card">
             <span class="project-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="10" cy="8" r="3.6" />
@@ -292,6 +299,33 @@
             <h3 data-i18n="projects.c3t">Onboarding Digital</h3>
             <p data-i18n="projects.c3d">Incorporación de clientes con identidad digital y verificación remota.</p>
           </article>
+          </div>
+
+          <div class="carousel-controls">
+            <button
+              type="button"
+              class="carousel-btn"
+              data-dir="-1"
+              data-i18n-aria-label="carousel.prev"
+              aria-label="Proyecto anterior"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15 5l-7 7 7 7" />
+              </svg>
+            </button>
+            <div class="carousel-dots"></div>
+            <button
+              type="button"
+              class="carousel-btn"
+              data-dir="1"
+              data-i18n-aria-label="carousel.next"
+              aria-label="Proyecto siguiente"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -373,7 +407,7 @@
       </section>
 
       <!-- HABILIDADES -->
-      <section class="section skills-section">
+      <section class="section skills-section" id="habilidades">
         <div class="section-head reveal">
           <p class="eyebrow" data-i18n="skills.eyebrow">Habilidades</p>
           <h2 data-i18n="skills.title">Competencias comerciales y directivas.</h2>
@@ -408,6 +442,10 @@
         </div>
       </section>
     </main>
+
+    <!-- Indicador de sección: los puntos los genera script.js a partir de las
+         secciones de <main>, y sus etiquetas salen de cada encabezado. -->
+    <nav class="section-dots" data-i18n-aria-label="dots.label" aria-label="Ir a una sección"></nav>
 
     <footer class="site-footer">
       <p class="footer-name">Raquel García Jabardo</p>

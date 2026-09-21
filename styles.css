@@ -570,14 +570,143 @@ h1, h2, h3 {
 .footer-nav a { color: var(--muted); font-size: 0.88rem; font-weight: 500; transition: color 0.2s ease; }
 .footer-nav a:hover { color: var(--gold); }
 
-/* ---------- Reveal animation ---------- */
+/* ---------- Animaciones de entrada ---------- */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+.reveal-left { transform: translateX(-30px); }
+.reveal-right { transform: translateX(30px); }
+.reveal-scale { transform: scale(0.96); }
 .reveal.is-visible { opacity: 1; transform: none; }
+
+/* ---------- Ritmo de "slides" al desplazarse ---------- */
+/* `proximity` encaja la sección cuando ya estás cerca, pero no secuestra el
+   scroll: la rueda, la barra y Ctrl+F siguen funcionando igual. */
+@media (min-width: 901px) {
+  html { scroll-snap-type: y proximity; }
+  main > section { scroll-snap-align: start; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
-  html { scroll-behavior: auto; }
+  html { scroll-behavior: auto; scroll-snap-type: none; }
+  .carousel-track { scroll-behavior: auto; }
 }
+
+/* ---------- Indicador de sección ---------- */
+.section-dots {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+}
+/* Sólo cuando sobra margen a los lados del contenido (máx. 1180px). */
+@media (min-width: 1280px) {
+  .section-dots { display: flex; }
+}
+.section-dot {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+}
+.section-dot::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(15, 35, 56, 0.35);
+  transition: transform 0.25s var(--ease), background 0.25s ease, border-color 0.25s ease;
+}
+.section-dot:hover::after { border-color: var(--gold); }
+.section-dot.is-active::after {
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: scale(1.5);
+}
+.section-dot-label {
+  position: absolute;
+  right: 20px;
+  white-space: nowrap;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--navy);
+  background: rgba(250, 248, 242, 0.96);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.24rem 0.7rem;
+  box-shadow: var(--shadow-soft);
+  opacity: 0;
+  transform: translateX(8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s var(--ease);
+}
+.section-dot:hover .section-dot-label,
+.section-dot:focus-visible .section-dot-label { opacity: 1; transform: none; }
+.section-dot:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 50%; }
+
+/* ---------- Carrusel ---------- */
+.carousel-track {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  /* Sin scroll-snap a propósito: con tarjetas anchas los anclajes de las
+     últimas caen más allá del scroll máximo, y el navegador devolvía el track
+     a 0 en cuanto se desplazaba. El paginado lo lleva script.js, que además
+     deja el desplazamiento libre con el dedo o el trackpad. */
+  scroll-behavior: smooth;
+  /* Sin relleno horizontal: desplazaría el origen del scroll y descuadraría
+     el cálculo de páginas. El vertical deja sitio a la sombra al pasar. */
+  padding: 0.4rem 0 1rem;
+  margin-top: -0.4rem;
+  scrollbar-width: none;
+}
+.carousel-track::-webkit-scrollbar { display: none; }
+.carousel-track:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: var(--radius); }
+.carousel-track > .project-card {
+  flex: 0 0 clamp(265px, 70vw, 420px);
+  min-height: 230px;
+}
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.carousel-btn {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--navy);
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: border-color 0.25s ease, color 0.25s ease, opacity 0.25s ease;
+}
+.carousel-btn svg { width: 20px; height: 20px; }
+.carousel-btn:hover:not(:disabled) { border-color: var(--gold); color: var(--gold); }
+.carousel-btn:disabled { opacity: 0.35; cursor: default; }
+.carousel-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.carousel-dots { display: flex; gap: 8px; }
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(15, 35, 56, 0.35);
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.25s var(--ease), background 0.25s ease, border-color 0.25s ease;
+}
+.carousel-dot.is-active { background: var(--gold); border-color: var(--gold); transform: scale(1.4); }
+.carousel-dot:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 
 /* ---------- Responsive ---------- */
 /* Con la nav completa visible, el nombre de marca deja sitio al menú */

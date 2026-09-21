@@ -7,6 +7,9 @@ const EN = {
     "Raquel García Jabardo — Channel Partner Manager specialised in electronic signature, digital identity and partner development. Over 25 years of commercial experience across banking, insurance, utilities and telecommunications.",
 
   "lang.groupLabel": "Select language",
+  "dots.label": "Jump to a section",
+  "carousel.prev": "Previous project",
+  "carousel.next": "Next project",
 
   "nav.about": "About",
   "nav.strengths": "Strengths",
@@ -95,6 +98,7 @@ const EN = {
   "projects.eyebrow": "Namirial",
   "projects.title": "Projects at Namirial",
   "projects.lede": "Three strategic initiatives within the digital trust ecosystem:",
+  "projects.trackLabel": "Projects — horizontal scrolling",
   "projects.c1t": "Digital Wallet",
   "projects.c1d": "Secure digital wallet with verified identity and built-in electronic signature.",
   "projects.c2t": "Electronic Signature",
@@ -213,6 +217,10 @@ function applyLang(lang) {
   } catch (err) {
     /* almacenamiento no disponible: el idioma simplemente no se recuerda */
   }
+
+  // El indicador de secciones toma sus etiquetas de los encabezados, así que
+  // necesita saber cuándo se han traducido.
+  document.dispatchEvent(new CustomEvent("langchange", { detail: { lang } }));
 }
 
 langButtons.forEach((btn) => {
