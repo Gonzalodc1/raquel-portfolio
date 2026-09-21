@@ -464,6 +464,59 @@ h1, h2, h3 {
 .edu-card h3 { font-size: 1.1rem; margin: 0.5rem 0 0.4rem; }
 .edu-card p { color: var(--muted); margin: 0; font-size: 0.95rem; }
 
+/* ---------- Certificaciones ---------- */
+.cert-block { margin-top: clamp(2rem, 4vw, 3rem); }
+.cert-heading {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--line);
+}
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.6rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s var(--ease), border-color 0.3s ease;
+}
+.cert-card:hover { transform: translateY(-3px); border-color: rgba(194, 154, 78, 0.5); }
+.cert-badge {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(194, 154, 78, 0.14);
+  color: var(--gold);
+}
+.cert-badge svg { width: 24px; height: 24px; }
+.cert-main { flex: 1; min-width: 0; }
+.cert-issuer {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--gold);
+  font-weight: 700;
+}
+.cert-title { font-family: "Fraunces", serif; font-size: 1.12rem; font-weight: 600; margin: 0.3rem 0 0.35rem; }
+.cert-main p { color: var(--muted); font-size: 0.94rem; margin: 0; }
+.cert-meta { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 0.45rem; }
+.cert-date { font-size: 0.85rem; color: var(--muted); font-weight: 600; white-space: nowrap; }
+.cert-verify {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+  border-bottom: 1px solid var(--gold);
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+.cert-verify:hover { color: var(--gold); }
+
 /* ---------- Habilidades ---------- */
 .skill-tags { display: flex; flex-wrap: wrap; gap: 0.7rem; list-style: none; margin: 0; padding: 0; }
 .skill-tags li {
@@ -550,6 +603,15 @@ h1, h2, h3 {
 }
 @media (max-width: 620px) {
   .cards-grid, .logros-grid, .edu-grid { grid-template-columns: 1fr; }
+  .cert-card { flex-wrap: wrap; }
+  .cert-meta {
+    flex-basis: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--line);
+  }
   .nav-cta { display: none; }
   .hero-facts { gap: 1.4rem; }
 }
