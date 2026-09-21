@@ -26,55 +26,60 @@
         <span class="brand-name">Raquel García Jabardo</span>
       </a>
       <nav class="topnav">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#fortalezas">Fortalezas</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#logros">Logros</a>
-        <a href="#formacion">Formación</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+        <a href="#fortalezas" data-i18n="nav.strengths">Fortalezas</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#logros" data-i18n="nav.achievements">Logros</a>
+        <a href="#formacion" data-i18n="nav.education">Formación</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
       </nav>
-      <a class="btn btn-solid nav-cta" href="./assets/Raquel_Garcia_Jabardo_CV.pdf" download target="_blank" rel="noreferrer">Descargar CV</a>
+      <div class="lang-switch" role="group" data-i18n-aria-label="lang.groupLabel" aria-label="Seleccionar idioma">
+        <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true" lang="es">ES</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+      <a class="btn btn-solid nav-cta" href="./assets/Raquel_Garcia_Jabardo_CV.pdf" download target="_blank" rel="noreferrer" data-i18n="nav.cv">Descargar CV</a>
     </header>
 
     <main id="top">
       <!-- HERO -->
       <section class="hero section">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Firma electrónica · Identidad digital · Partners</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Firma electrónica · Identidad digital · Partners</p>
           <h1>Raquel García Jabardo</h1>
-          <p class="hero-role">Channel Partner Manager</p>
-          <p class="hero-lede">
+          <p class="hero-role" data-i18n="hero.role">Channel Partner Manager</p>
+          <p class="hero-lede" data-i18n="hero.lede">
             Más de 10 años liderando iniciativas de transformación digital,
             ayudando a las empresas a optimizar sus procesos mediante soluciones
             avanzadas de firma electrónica e identidad digital.
           </p>
           <div class="hero-cta">
-            <a class="btn btn-solid" href="#contacto">Hablemos</a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/kamraquel" target="_blank" rel="noreferrer">Ver LinkedIn</a>
+            <a class="btn btn-solid" href="#contacto" data-i18n="hero.ctaTalk">Hablemos</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/kamraquel" target="_blank" rel="noreferrer" data-i18n="hero.ctaLinkedin">Ver LinkedIn</a>
           </div>
           <ul class="hero-facts">
-            <li><strong>25+</strong><span>años de trayectoria</span></li>
-            <li><strong>+50%</strong><span>crecimiento de la red de partners</span></li>
-            <li><strong>4</strong><span>sectores clave</span></li>
+            <li><strong>25+</strong><span data-i18n="hero.fact1">años de trayectoria</span></li>
+            <li><strong>+50%</strong><span data-i18n="hero.fact2">crecimiento de la red de partners</span></li>
+            <li><strong>4</strong><span data-i18n="hero.fact3">sectores clave</span></li>
           </ul>
         </div>
         <div class="hero-portrait reveal">
           <div class="portrait-frame">
-            <img src="./assets/img/raquel.png" alt="Retrato de Raquel García Jabardo" />
+            <img src="./assets/img/raquel.png" data-i18n-alt="hero.portraitAlt" alt="Retrato de Raquel García Jabardo" />
           </div>
-          <span class="portrait-tag">Madrid, España</span>
+          <span class="portrait-tag" data-i18n="hero.location">Madrid, España</span>
         </div>
       </section>
 
       <!-- SOBRE MI -->
       <section class="section" id="sobre-mi">
         <div class="section-head reveal">
-          <p class="eyebrow">Sobre mí</p>
-          <h2>Estrategia comercial con vocación de personas.</h2>
+          <p class="eyebrow" data-i18n="about.eyebrow">Sobre mí</p>
+          <h2 data-i18n="about.title">Estrategia comercial con vocación de personas.</h2>
         </div>
         <div class="about-grid">
           <div class="about-copy reveal">
-            <p>
+            <p data-i18n="about.p1">
               Con más de 10 años de experiencia, lidero iniciativas de
               transformación digital ayudando a empresas a optimizar sus procesos
               mediante soluciones avanzadas de firma electrónica e identidad
@@ -83,7 +88,7 @@
               valor tangible en industrias como banca, telecomunicaciones,
               utilities y seguros.
             </p>
-            <p>
+            <p data-i18n="about.p2">
               A lo largo de mi trayectoria he desarrollado una sólida capacidad
               estratégica y excelentes habilidades de negociación, lo que me ha
               permitido fortalecer relaciones clave y alcanzar resultados
@@ -92,7 +97,7 @@
               comerciales y asegurando el éxito y la rentabilidad de nuestras
               iniciativas conjuntas.
             </p>
-            <p>
+            <p data-i18n="about.p3">
               En el plano personal, disfruto viajando, practicando deporte y
               pasando tiempo con mi familia. Me considero una persona sociable,
               cercana y orientada a las personas, cualidades que refuerzan mi forma
@@ -101,20 +106,20 @@
           </div>
           <aside class="about-side reveal">
             <div class="side-card">
-              <h3>Especialización</h3>
+              <h3 data-i18n="about.specTitle">Especialización</h3>
               <ul>
-                <li>Firma electrónica y digital</li>
-                <li>Identidad digital y e-delivery</li>
-                <li>Venta consultiva de soluciones tecnológicas</li>
-                <li>Desarrollo estratégico de partners</li>
+                <li data-i18n="about.spec1">Firma electrónica y digital</li>
+                <li data-i18n="about.spec2">Identidad digital y e-delivery</li>
+                <li data-i18n="about.spec3">Venta consultiva de soluciones tecnológicas</li>
+                <li data-i18n="about.spec4">Desarrollo estratégico de partners</li>
               </ul>
             </div>
             <div class="side-card">
-              <h3>Idiomas</h3>
+              <h3 data-i18n="about.langTitle">Idiomas</h3>
               <ul class="lang-list">
-                <li><span>Español</span><em>Nativo</em></li>
-                <li><span>Inglés</span><em>Profesional</em></li>
-                <li><span>Italiano</span><em>Profesional</em></li>
+                <li><span data-i18n="about.langEs">Español</span><em data-i18n="about.langEsLevel">Nativo</em></li>
+                <li><span data-i18n="about.langEn">Inglés</span><em data-i18n="about.langEnLevel">Profesional</em></li>
+                <li><span data-i18n="about.langIt">Italiano</span><em data-i18n="about.langItLevel">Profesional</em></li>
               </ul>
             </div>
           </aside>
@@ -124,39 +129,39 @@
       <!-- FORTALEZAS -->
       <section class="section" id="fortalezas">
         <div class="section-head reveal">
-          <p class="eyebrow">Fortalezas clave</p>
-          <h2>Lo que aporto en cada proyecto.</h2>
+          <p class="eyebrow" data-i18n="strengths.eyebrow">Fortalezas clave</p>
+          <h2 data-i18n="strengths.title">Lo que aporto en cada proyecto.</h2>
         </div>
         <div class="cards-grid">
           <article class="feature-card reveal">
             <span class="feature-num">01</span>
-            <h3>Visión estratégica y de negocio</h3>
-            <p>Identifico oportunidades y desarrollo iniciativas alineadas con los objetivos comerciales de la compañía.</p>
+            <h3 data-i18n="strengths.c1t">Visión estratégica y de negocio</h3>
+            <p data-i18n="strengths.c1d">Identifico oportunidades y desarrollo iniciativas alineadas con los objetivos comerciales de la compañía.</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-num">02</span>
-            <h3>Negociación y enfoque conciliador</h3>
-            <p>Construyo relaciones de confianza y cierro acuerdos beneficiosos para todas las partes.</p>
+            <h3 data-i18n="strengths.c2t">Negociación y enfoque conciliador</h3>
+            <p data-i18n="strengths.c2d">Construyo relaciones de confianza y cierro acuerdos beneficiosos para todas las partes.</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-num">03</span>
-            <h3>Liderazgo de equipos transversales</h3>
-            <p>Gestiono y motivo equipos, fomentando entornos colaborativos y de alto rendimiento.</p>
+            <h3 data-i18n="strengths.c3t">Liderazgo de equipos transversales</h3>
+            <p data-i18n="strengths.c3d">Gestiono y motivo equipos, fomentando entornos colaborativos y de alto rendimiento.</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-num">04</span>
-            <h3>Resolución de conflictos</h3>
-            <p>Abordo situaciones complejas de forma eficaz, con una actitud siempre positiva y constructiva.</p>
+            <h3 data-i18n="strengths.c4t">Resolución de conflictos</h3>
+            <p data-i18n="strengths.c4d">Abordo situaciones complejas de forma eficaz, con una actitud siempre positiva y constructiva.</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-num">05</span>
-            <h3>Comunicación</h3>
-            <p>Alineo equipos, impulso proyectos y creo entornos de trabajo orientados a la excelencia.</p>
+            <h3 data-i18n="strengths.c5t">Comunicación</h3>
+            <p data-i18n="strengths.c5d">Alineo equipos, impulso proyectos y creo entornos de trabajo orientados a la excelencia.</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-num">06</span>
-            <h3>Orientación al cliente</h3>
-            <p>Diseño soluciones a medida que generan valor tangible y experiencias digitales seguras y fluidas.</p>
+            <h3 data-i18n="strengths.c6t">Orientación al cliente</h3>
+            <p data-i18n="strengths.c6d">Diseño soluciones a medida que generan valor tangible y experiencias digitales seguras y fluidas.</p>
           </article>
         </div>
       </section>
@@ -164,33 +169,33 @@
       <!-- SECTORES -->
       <section class="section sectors-section">
         <div class="section-head reveal">
-          <p class="eyebrow">Sectores</p>
-          <h2>Experiencia probada en industrias reguladas.</h2>
+          <p class="eyebrow" data-i18n="sectors.eyebrow">Sectores</p>
+          <h2 data-i18n="sectors.title">Experiencia probada en industrias reguladas.</h2>
         </div>
         <div class="sectors-band reveal">
-          <span>Banca</span>
-          <span>Seguros</span>
-          <span>Utilities</span>
-          <span>Telecomunicaciones</span>
+          <span data-i18n="sectors.s1">Banca</span>
+          <span data-i18n="sectors.s2">Seguros</span>
+          <span data-i18n="sectors.s3">Utilities</span>
+          <span data-i18n="sectors.s4">Telecomunicaciones</span>
         </div>
       </section>
 
       <!-- EXPERIENCIA -->
       <section class="section" id="experiencia">
         <div class="section-head reveal">
-          <p class="eyebrow">Experiencia</p>
-          <h2>Una trayectoria de crecimiento comercial.</h2>
+          <p class="eyebrow" data-i18n="exp.eyebrow">Experiencia</p>
+          <h2 data-i18n="exp.title">Una trayectoria de crecimiento comercial.</h2>
         </div>
         <div class="timeline">
           <article class="tl-item reveal">
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
-                <h3>Channel Partner Manager</h3>
-                <span class="tl-date">mar. 2022 — Actualidad</span>
+                <h3 data-i18n="exp.j1role">Channel Partner Manager</h3>
+                <span class="tl-date" data-i18n="exp.j1date">mar. 2022 — Actualidad</span>
               </div>
               <p class="tl-company">Namirial · Madrid</p>
-              <p>Desarrollo y gestión de la red de partners estratégicos: diseño e implementación de la estrategia de canal, modelos de colaboración y revenue sharing, y medición del desempeño mediante KPI para impulsar el negocio y la presencia en el mercado.</p>
+              <p data-i18n="exp.j1desc">Desarrollo y gestión de la red de partners estratégicos: diseño e implementación de la estrategia de canal, modelos de colaboración y revenue sharing, y medición del desempeño mediante KPI para impulsar el negocio y la presencia en el mercado.</p>
             </div>
           </article>
 
@@ -198,11 +203,11 @@
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
-                <h3>Alliance Manager</h3>
-                <span class="tl-date">abr. 2020 — mar. 2022</span>
+                <h3 data-i18n="exp.j2role">Alliance Manager</h3>
+                <span class="tl-date" data-i18n="exp.j2date">abr. 2020 — mar. 2022</span>
               </div>
               <p class="tl-company">Camerfirma · Grupo InfoCert</p>
-              <p>Gestión del canal a través de partners e integradores en banca, telco, seguros e inmobiliario, con soluciones de firma electrónica, video-identificación y certificados en la nube. Desarrollo de negocio en México y Colombia, y asesoramiento jurídico en la negociación de acuerdos.</p>
+              <p data-i18n="exp.j2desc">Gestión del canal a través de partners e integradores en banca, telco, seguros e inmobiliario, con soluciones de firma electrónica, video-identificación y certificados en la nube. Desarrollo de negocio en México y Colombia, y asesoramiento jurídico en la negociación de acuerdos.</p>
             </div>
           </article>
 
@@ -210,11 +215,11 @@
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
-                <h3>Sales Manager</h3>
-                <span class="tl-date">ene. 2018 — may. 2020</span>
+                <h3 data-i18n="exp.j3role">Sales Manager</h3>
+                <span class="tl-date" data-i18n="exp.j3date">ene. 2018 — may. 2020</span>
               </div>
               <p class="tl-company">Grupo MailComms</p>
-              <p>Formación, motivación y cohesión de los equipos de ventas, con sistemas de incentivos y estandarización de procesos. Gestión de cuentas en banca, seguros y utilities (BBVA, Bankinter, Liberbank, Sanitas, Axpo, entre otras) y elaboración de ofertas técnicas en RFP y licitaciones.</p>
+              <p data-i18n="exp.j3desc">Formación, motivación y cohesión de los equipos de ventas, con sistemas de incentivos y estandarización de procesos. Gestión de cuentas en banca, seguros y utilities (BBVA, Bankinter, Liberbank, Sanitas, Axpo, entre otras) y elaboración de ofertas técnicas en RFP y licitaciones.</p>
             </div>
           </article>
 
@@ -222,11 +227,11 @@
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
-                <h3>Key Account Manager</h3>
-                <span class="tl-date">ene. 2017 — mar. 2018</span>
+                <h3 data-i18n="exp.j4role">Key Account Manager</h3>
+                <span class="tl-date" data-i18n="exp.j4date">ene. 2017 — mar. 2018</span>
               </div>
               <p class="tl-company">Lleida.net</p>
-              <p>Gestión de cartera de clientes estratégicos en banca y seguros, seguimiento de proyectos de firma electrónica, captación de nuevas cuentas y liderazgo del equipo de Delivery y Tecnología.</p>
+              <p data-i18n="exp.j4desc">Gestión de cartera de clientes estratégicos en banca y seguros, seguimiento de proyectos de firma electrónica, captación de nuevas cuentas y liderazgo del equipo de Delivery y Tecnología.</p>
             </div>
           </article>
 
@@ -234,11 +239,11 @@
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
-                <h3>Key Account Manager</h3>
-                <span class="tl-date">ene. 2016 — ene. 2017</span>
+                <h3 data-i18n="exp.j5role">Key Account Manager</h3>
+                <span class="tl-date" data-i18n="exp.j5date">ene. 2016 — ene. 2017</span>
               </div>
               <p class="tl-company">Masprevención</p>
-              <p>Gestión de cuentas clave, alianzas estratégicas, atención personalizada y análisis de oportunidades comerciales.</p>
+              <p data-i18n="exp.j5desc">Gestión de cuentas clave, alianzas estratégicas, atención personalizada y análisis de oportunidades comerciales.</p>
             </div>
           </article>
 
@@ -246,11 +251,11 @@
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
-                <h3>Subdirectora de Red</h3>
-                <span class="tl-date">ene. 2009 — feb. 2016</span>
+                <h3 data-i18n="exp.j6role">Subdirectora de Red</h3>
+                <span class="tl-date" data-i18n="exp.j6date">ene. 2009 — feb. 2016</span>
               </div>
               <p class="tl-company">Quirón Prevención</p>
-              <p>Definición y seguimiento del plan estratégico de ventas, desarrollo de producto y benchmarking, dirección del área de Administración Pública (licitaciones) y responsabilidad de marketing e imagen de marca.</p>
+              <p data-i18n="exp.j6desc">Definición y seguimiento del plan estratégico de ventas, desarrollo de producto y benchmarking, dirección del área de Administración Pública (licitaciones) y responsabilidad de marketing e imagen de marca.</p>
             </div>
           </article>
 
@@ -258,12 +263,60 @@
             <div class="tl-marker"></div>
             <div class="tl-body">
               <div class="tl-head">
-                <h3>Key Account Manager</h3>
-                <span class="tl-date">ene. 2003 — mar. 2009</span>
+                <h3 data-i18n="exp.j7role">Key Account Manager</h3>
+                <span class="tl-date" data-i18n="exp.j7date">ene. 2003 — mar. 2009</span>
               </div>
               <p class="tl-company">Fraternidad-Muprespa</p>
-              <p>Gestión estratégica de la cartera de empresas asociadas, impulso continuo de la calidad del servicio y fortalecimiento de relaciones a largo plazo.</p>
+              <p data-i18n="exp.j7desc">Gestión estratégica de la cartera de empresas asociadas, impulso continuo de la calidad del servicio y fortalecimiento de relaciones a largo plazo.</p>
             </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROYECTOS EN NAMIRIAL -->
+      <section class="section projects-section" id="proyectos">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="projects.eyebrow">Namirial</p>
+          <h2 data-i18n="projects.title">Proyectos en Namirial</h2>
+          <p class="section-lede" data-i18n="projects.lede">
+            Actualmente liderando tres iniciativas estratégicas en el ecosistema
+            de confianza digital:
+          </p>
+        </div>
+        <div class="cards-grid projects-grid">
+          <article class="project-card reveal">
+            <span class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H17a1 1 0 0 1 1 1v1.5" />
+                <path d="M3 7.5v9A2.5 2.5 0 0 0 5.5 19H19a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2H5.5A2.5 2.5 0 0 1 3 7.5Z" />
+                <circle cx="16.5" cy="13.5" r="1.4" />
+              </svg>
+            </span>
+            <h3 data-i18n="projects.c1t">Wallet Digital</h3>
+            <p data-i18n="projects.c1d">Soluciones de cartera digital segura con identidad verificada y firma electrónica integrada.</p>
+          </article>
+          <article class="project-card reveal">
+            <span class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21H15" />
+                <path d="M14 3l4 4v3" />
+                <path d="M14 3v4h4" />
+                <path d="M20.6 12.6a1.4 1.4 0 0 1 0 2L16 19.2l-2.6.6.6-2.6 4.6-4.6a1.4 1.4 0 0 1 2 0Z" />
+              </svg>
+            </span>
+            <h3 data-i18n="projects.c2t">Firma Electrónica</h3>
+            <p data-i18n="projects.c2d">Estrategias comerciales para firma avanzada en sectores regulados: banca, seguros y telecomunicaciones.</p>
+          </article>
+          <article class="project-card reveal">
+            <span class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="10" cy="8" r="3.6" />
+                <path d="M3.5 20a6.5 6.5 0 0 1 11.2-4.5" />
+                <path d="M14.5 18.5l2 2 4-4.5" />
+              </svg>
+            </span>
+            <h3 data-i18n="projects.c3t">Onboarding Digital</h3>
+            <p data-i18n="projects.c3d">Procesos de incorporación optimizados mediante identidad digital y verificación remota de clientes.</p>
           </article>
         </div>
       </section>
@@ -271,29 +324,29 @@
       <!-- LOGROS -->
       <section class="section logros-section" id="logros">
         <div class="section-head reveal">
-          <p class="eyebrow">Logros destacados</p>
-          <h2>Resultados que hablan por sí solos.</h2>
+          <p class="eyebrow" data-i18n="ach.eyebrow">Logros destacados</p>
+          <h2 data-i18n="ach.title">Resultados que hablan por sí solos.</h2>
         </div>
         <div class="cards-grid logros-grid">
           <article class="logro-card reveal">
             <p class="logro-metric">+50%</p>
-            <h3>Estrategia de partners</h3>
-            <p>Diseñé y ejecuté la estrategia de canal —con portal exclusivo y herramientas de desarrollo— impulsando un crecimiento considerable de la cartera de partners.</p>
+            <h3 data-i18n="ach.c1t">Estrategia de partners</h3>
+            <p data-i18n="ach.c1d">Diseñé y ejecuté la estrategia de canal —con portal exclusivo y herramientas de desarrollo— impulsando un crecimiento considerable de la cartera de partners.</p>
           </article>
           <article class="logro-card reveal">
-            <p class="logro-metric">Jurídico + técnico</p>
-            <h3>Valor diferencial en ventas</h3>
-            <p>Aporté conocimiento jurídico y técnico en reuniones comerciales, facilitando la toma de decisiones y reforzando la propuesta de valor ante clientes y partners.</p>
+            <p class="logro-metric" data-i18n="ach.c2m">Jurídico + técnico</p>
+            <h3 data-i18n="ach.c2t">Valor diferencial en ventas</h3>
+            <p data-i18n="ach.c2d">Aporté conocimiento jurídico y técnico en reuniones comerciales, facilitando la toma de decisiones y reforzando la propuesta de valor ante clientes y partners.</p>
           </article>
           <article class="logro-card reveal">
-            <p class="logro-metric">Pipeline</p>
-            <h3>Campañas de generación de leads</h3>
-            <p>Diseñé e implementé campañas de captación que contribuyeron a la creación de nuevos prospectos y al crecimiento del pipeline comercial.</p>
+            <p class="logro-metric" data-i18n="ach.c3m">Pipeline</p>
+            <h3 data-i18n="ach.c3t">Campañas de generación de leads</h3>
+            <p data-i18n="ach.c3d">Diseñé e implementé campañas de captación que contribuyeron a la creación de nuevos prospectos y al crecimiento del pipeline comercial.</p>
           </article>
           <article class="logro-card reveal">
-            <p class="logro-metric">Ponente</p>
-            <h3>Referente del sector</h3>
-            <p>Participé como ponente en diversos eventos, compartiendo experiencia y posicionando a la compañía como referente en firma e identidad digital.</p>
+            <p class="logro-metric" data-i18n="ach.c4m">Ponente</p>
+            <h3 data-i18n="ach.c4t">Referente del sector</h3>
+            <p data-i18n="ach.c4d">Participé como ponente en diversos eventos, compartiendo experiencia y posicionando a la compañía como referente en firma e identidad digital.</p>
           </article>
         </div>
       </section>
@@ -301,24 +354,24 @@
       <!-- FORMACION -->
       <section class="section" id="formacion">
         <div class="section-head reveal">
-          <p class="eyebrow">Formación</p>
-          <h2>Base jurídica y dirección comercial.</h2>
+          <p class="eyebrow" data-i18n="edu.eyebrow">Formación</p>
+          <h2 data-i18n="edu.title">Base jurídica y dirección comercial.</h2>
         </div>
         <div class="edu-grid">
           <article class="edu-card reveal">
             <span class="edu-year">2017</span>
-            <h3>Programa Superior en Dirección de Ventas (PSDV)</h3>
+            <h3 data-i18n="edu.c1t">Programa Superior en Dirección de Ventas (PSDV)</h3>
             <p>ESIC Business &amp; Marketing School</p>
           </article>
           <article class="edu-card reveal">
             <span class="edu-year">2001</span>
-            <h3>Máster en Prevención de Riesgos Laborales</h3>
-            <p>Instituto Madrileño de Formación</p>
+            <h3 data-i18n="edu.c2t">Máster en Prevención de Riesgos Laborales</h3>
+            <p data-i18n="edu.c2s">Instituto Madrileño de Formación</p>
           </article>
           <article class="edu-card reveal">
             <span class="edu-year">1996</span>
-            <h3>Licenciatura en Derecho</h3>
-            <p>Universidad Complutense de Madrid</p>
+            <h3 data-i18n="edu.c3t">Licenciatura en Derecho</h3>
+            <p data-i18n="edu.c3s">Universidad Complutense de Madrid</p>
           </article>
         </div>
       </section>
@@ -326,35 +379,35 @@
       <!-- HABILIDADES -->
       <section class="section skills-section">
         <div class="section-head reveal">
-          <p class="eyebrow">Habilidades</p>
-          <h2>Competencias comerciales y directivas.</h2>
+          <p class="eyebrow" data-i18n="skills.eyebrow">Habilidades</p>
+          <h2 data-i18n="skills.title">Competencias comerciales y directivas.</h2>
         </div>
         <ul class="skill-tags reveal">
-          <li>Venta consultiva</li>
-          <li>Gestión de cuentas</li>
-          <li>Negociación</li>
-          <li>Liderazgo</li>
-          <li>Resolución de conflictos</li>
-          <li>Motivación de equipos</li>
-          <li>Desarrollo de negocio</li>
-          <li>Marketing</li>
-          <li>Gran comunicadora</li>
-          <li>Orientación al cliente</li>
+          <li data-i18n="skills.t1">Venta consultiva</li>
+          <li data-i18n="skills.t2">Gestión de cuentas</li>
+          <li data-i18n="skills.t3">Negociación</li>
+          <li data-i18n="skills.t4">Liderazgo</li>
+          <li data-i18n="skills.t5">Resolución de conflictos</li>
+          <li data-i18n="skills.t6">Motivación de equipos</li>
+          <li data-i18n="skills.t7">Desarrollo de negocio</li>
+          <li data-i18n="skills.t8">Marketing</li>
+          <li data-i18n="skills.t9">Gran comunicadora</li>
+          <li data-i18n="skills.t10">Orientación al cliente</li>
         </ul>
       </section>
 
       <!-- CONTACTO -->
       <section class="section contact-section" id="contacto">
         <div class="contact-card reveal">
-          <p class="eyebrow">Contacto</p>
-          <h2>Construyamos relaciones que generan valor.</h2>
-          <p class="contact-lede">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+          <h2 data-i18n="contact.title">Construyamos relaciones que generan valor.</h2>
+          <p class="contact-lede" data-i18n="contact.lede">
             Abierta a nuevas oportunidades, colaboraciones y proyectos en el ámbito
             de la firma electrónica, la identidad digital y el desarrollo comercial.
           </p>
           <div class="contact-actions">
-            <a class="btn btn-solid" href="https://www.linkedin.com/in/kamraquel" target="_blank" rel="noreferrer">Conectar en LinkedIn</a>
-            <a class="btn btn-ghost" href="./assets/Raquel_Garcia_Jabardo_CV.pdf" download target="_blank" rel="noreferrer">Descargar CV (PDF)</a>
+            <a class="btn btn-solid" href="https://www.linkedin.com/in/kamraquel" target="_blank" rel="noreferrer" data-i18n="contact.ctaLinkedin">Conectar en LinkedIn</a>
+            <a class="btn btn-ghost" href="./assets/Raquel_Garcia_Jabardo_CV.pdf" download target="_blank" rel="noreferrer" data-i18n="contact.ctaCv">Descargar CV (PDF)</a>
           </div>
         </div>
       </section>
@@ -362,15 +415,17 @@
 
     <footer class="site-footer">
       <p class="footer-name">Raquel García Jabardo</p>
-      <p class="footer-copy">Channel Partner Manager · Firma e Identidad Digital · Madrid, España</p>
+      <p class="footer-copy" data-i18n="footer.copy">Channel Partner Manager · Firma e Identidad Digital · Madrid, España</p>
       <nav class="footer-nav">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#logros">Logros</a>
+        <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#logros" data-i18n="nav.achievements">Logros</a>
         <a href="https://www.linkedin.com/in/kamraquel" target="_blank" rel="noreferrer">LinkedIn</a>
       </nav>
     </footer>
 
+    <script src="./i18n.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
