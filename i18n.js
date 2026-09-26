@@ -47,7 +47,7 @@ const EN = {
   "about.langEn": "English",
   "about.langEnLevel": "Professional",
   "about.langIt": "Italian",
-  "about.langItLevel": "Professional",
+  "about.langItLevel": "Basic",
 
   "strengths.eyebrow": "Key strengths",
   "strengths.title": "What I bring to every project.",
@@ -70,6 +70,7 @@ const EN = {
   "sectors.s2": "Insurance",
   "sectors.s3": "Utilities",
   "sectors.s4": "Telecommunications",
+  "sectors.s5": "Partners",
 
   "exp.eyebrow": "Experience",
   "exp.title": "A career built on commercial growth.",
